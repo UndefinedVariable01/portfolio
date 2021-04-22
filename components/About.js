@@ -36,7 +36,7 @@ export default function About() {
             <div className={`${container} ${c5}`}>
                 <p className={question}>How long have your been coding for?</p>
                 <p className={answer}>
-                    {ageYears - 18} years(${ageYears - 20}.5 years web dev)
+                    {ageYears - 18} years({ageYears - 20}.5 years web dev)
                 </p>
             </div>
             <div className={`${container} ${c6}`}>
