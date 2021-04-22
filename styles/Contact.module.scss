@@ -1,0 +1,166 @@
+@import "media-queries";
+
+.contact {
+    padding-bottom: 6.25rem;
+
+    @include breakpoint-up-to("large") {
+        padding-bottom: 7.25rem;
+    }
+}
+
+.title {
+    margin-bottom: 2.5rem;
+
+    @include breakpoint-up-to("large") {
+        margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 0;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint-up-to("medium") {
+        display: block;
+    }
+}
+
+.intro {
+    width: 30%;
+
+    @include breakpoint-up-to("large") {
+        order: 2;
+        width: 45%;
+        margin-top: 1.625rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.info {
+    line-height: 1.5;
+    padding-right: 1.875rem;
+
+    @include breakpoint-up-to("large") {
+        padding-right: 0;
+    }
+
+    @include breakpoint-up-to("medium") {
+        order: 2;
+        max-width: 31.25rem;
+    }
+}
+
+.imageContainer {
+    width: 100%;
+
+    @include breakpoint-up-to("large") {
+        width: 18.75rem;
+    }
+}
+
+.formContainer {
+    width: 65%;
+
+    @include breakpoint-up-to("large") {
+        width: 50%;
+    }
+
+    @include breakpoint-up-to("medium") {
+        width: 100%;
+    }
+}
+
+.fieldGap {
+    margin-bottom: 1.875rem;
+
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.inputsContainer {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint-up-to("large") {
+        display: block;
+    }
+}
+
+.inputField {
+    width: 48%;
+
+    @include breakpoint-up-to("large") {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.label,
+.input,
+.textarea {
+    width: 100%;
+}
+
+.label {
+    font-weight: 600;
+    margin-bottom: 0.875rem;
+
+    @include breakpoint-up-to("large") {
+        margin-bottom: 0.625rem;
+    }
+}
+
+.input,
+.textarea {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 0.5rem 0.875rem;
+}
+
+.textarea {
+    line-height: 1.4;
+    height: 7.5rem;
+    resize: none;
+}
+
+.submitContainer {
+    display: flex;
+    align-items: center;
+}
+
+.submitBtn {
+    background-color: #121212;
+    color: #f7f7f7;
+    padding: 0.625rem 1rem;
+    cursor: pointer;
+}
+
+.loadingImage {
+    height: 2.5rem;
+    margin-left: 1.875rem;
+}
+
+.alertText {
+    margin-top: 1.875rem;
+
+    @include breakpoint-up-to("medium") {
+        line-height: 1.5;
+        margin-top: 1.25rem;
+    }
+}

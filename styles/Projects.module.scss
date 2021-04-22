@@ -1,0 +1,95 @@
+@import "media-queries";
+
+.layoutPadding {
+    padding-top: 3.75rem;
+
+    @include breakpoint-up-to("large") {
+        padding-top: 2.5rem;
+    }
+}
+
+.navLink {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @include breakpoint-up-to("large") {
+        margin-bottom: 0.625rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 0.825rem;
+    }
+
+    img {
+        padding-top: 0.125rem;
+        margin-right: 0.5rem;
+        transform: rotateY(180deg);
+
+        @include breakpoint-up-to("large") {
+            padding-top: 0;
+        }
+    }
+}
+
+.infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3.125rem;
+
+    @include breakpoint-up-to("large") {
+        margin-bottom: 2.625rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        display: block;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.projectsTitle {
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 3rem;
+    }
+}
+
+.sortOptions {
+    display: flex;
+    align-items: center;
+
+    p {
+        cursor: pointer;
+    }
+}
+
+.lightText {
+    opacity: 0.5;
+}
+
+.divider {
+    width: 2px;
+    height: 1.125rem;
+    background-color: #252525;
+    margin: 0 1.875rem;
+    transform: rotateZ(15deg);
+
+    @include breakpoint-up-to("large") {
+        width: 1.6px;
+        margin: 0 1.5rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        margin: 0 1rem;
+    }
+}
+
+.projectsContainer {
+    margin-bottom: 4.25rem;
+
+    @include breakpoint-up-to("large") {
+        margin-bottom: 3.5rem;
+    }
+}

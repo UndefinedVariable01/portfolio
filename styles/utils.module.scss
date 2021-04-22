@@ -1,0 +1,49 @@
+@import "media-queries";
+
+.layout {
+    max-width: 69.75rem;
+    margin: 0 auto;
+
+    @include breakpoint-up-to("large") {
+        max-width: unset;
+        padding: 0 2.5rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        padding: 0 2rem;
+    }
+}
+
+.blockImageContainer > div {
+    display: block !important;
+}
+
+.border {
+    border: 1px solid #707070;
+}
+
+.sectionGapTop {
+    padding-top: 3.125rem;
+
+    @include breakpoint-up-to("large") {
+        padding-top: 1.563rem;
+    }
+}
+
+.sectionGapBottom {
+    padding-bottom: 4.688rem;
+
+    @include breakpoint-up-to("large") {
+        padding-bottom: 3.125rem;
+    }
+}
+
+.link {
+    color: #ff6c0a;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

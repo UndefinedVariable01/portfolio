@@ -1,0 +1,166 @@
+@import "media-queries";
+
+.wrapper {
+    padding-top: 3.75rem;
+
+    @include breakpoint-up-to("large") {
+        padding-top: 2.5rem;
+    }
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 1.875rem;
+
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 2.5rem;
+    }
+
+    img {
+        margin-right: 0.75rem;
+        transform: rotateY(180deg);
+    }
+}
+
+.projectContainer {
+    padding-bottom: 6.875rem;
+
+    @include breakpoint-up-to("large") {
+        padding-bottom: 6.125rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        padding-bottom: 6rem;
+    }
+}
+
+.imageContainer {
+    position: relative;
+    margin-bottom: 3.125rem;
+
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 1.5rem;
+    }
+
+    a {
+        display: block;
+    }
+}
+
+.projectImage {
+    position: relative;
+    width: 100%;
+}
+
+.shadow {
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 7.5%;
+    width: 85%;
+    height: 85%;
+    box-shadow: 0 16px 100px rgba(0, 0, 0, 0.2);
+
+    @include breakpoint-up-to("large") {
+        box-shadow: 0 8px 70px rgba(0, 0, 0, 0.14);
+    }
+
+    @include breakpoint-up-to("medium") {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.title {
+    font-weight: 600;
+    padding-right: 10%;
+
+    @include breakpoint-up-to("large") {
+        font-size: 1.5rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        font-size: 1.25rem;
+        padding-right: 5%;
+    }
+}
+
+.date {
+    opacity: 0.5;
+    margin-top: 0.5rem;
+
+    @include breakpoint-up-to("medium") {
+        margin-top: 0.75rem;
+    }
+
+    span {
+        margin-right: 0.5rem;
+    }
+}
+
+.description,
+.tools {
+    line-height: 1.4;
+    margin-top: 2.125rem;
+
+    @include breakpoint-up-to("large") {
+        margin-top: 1.75rem;
+    }
+}
+
+.description {
+    max-width: 800px;
+
+    @include breakpoint-up-to("large") {
+        max-width: unset;
+        padding-right: 20%;
+    }
+
+    @include breakpoint-up-to("medium") {
+        padding-right: 7.5%;
+    }
+}
+
+.tools {
+    max-width: 42.188rem;
+
+    @include breakpoint-up-to("large") {
+        max-width: unset;
+        padding-right: 30%;
+    }
+
+    @include breakpoint-up-to("medium") {
+        padding-right: 10%;
+    }
+
+    span {
+        margin-left: 0.5rem;
+    }
+}
+
+.linksContainer {
+    margin-top: 2.5rem;
+
+    @include breakpoint-up-to("medium") {
+        margin-top: 2.25rem;
+    }
+}
+
+.infoLink {
+    display: flex;
+    color: #00797f;
+    margin-top: 0.875rem;
+
+    @include breakpoint-up-to("large") {
+        margin-top: 0.75rem;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    img {
+        margin-right: 0.75rem;
+    }
+}

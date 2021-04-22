@@ -1,0 +1,29 @@
+@import "media-queries";
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint-up-to("large") {
+        margin-bottom: 3rem;
+    }
+
+    @include breakpoint-up-to("medium") {
+        display: block;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.text {
+    @include breakpoint-up-to("medium") {
+        line-height: 1.4;
+        width: 90%;
+        margin-bottom: 1.125rem;
+    }
+}
+
+.icon {
+    width: 1.5rem;
+}

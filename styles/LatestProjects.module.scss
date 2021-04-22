@@ -1,0 +1,32 @@
+@import "media-queries";
+
+.container {
+    margin-bottom: 2.5rem;
+
+    @include breakpoint-up-to("large") {
+        margin-bottom: 2.375rem;
+    }
+}
+
+.title {
+    margin-bottom: 0.75rem;
+
+    @include breakpoint-up-to("large") {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.showMoreLink {
+    display: flex;
+    align-items: center;
+
+    img {
+        padding-top: 0.25rem;
+        margin-left: 0.625rem;
+
+        @include breakpoint-up-to("large") {
+            padding-top: 0.188rem;
+            margin-left: 0.5rem;
+        }
+    }
+}
