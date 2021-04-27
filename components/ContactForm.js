@@ -65,7 +65,10 @@ export default function ContactForm() {
                         maxLength="32"
                         value={name}
                         onBlur={(e) => checkMinLength(e, 3, "Name should be at least 3 characters long!")}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) => {
+                            e.target.setCustomValidity("")
+                            setName(e.target.value)
+                        }}
                     />
                 </div>
                 <div className={inputField}>
@@ -80,7 +83,10 @@ export default function ContactForm() {
                         required
                         value={contact}
                         onBlur={(e) => checkMinLength(e, 3, "Contact should be at least 3 characters long!")}
-                        onChange={(e) => setContact(e.target.value)}
+                        onChange={(e) => {
+                            e.target.setCustomValidity("")
+                            setContact(e.target.value)
+                        }}
                     />
                 </div>
             </div>
@@ -95,7 +101,10 @@ export default function ContactForm() {
                     required
                     value={message}
                     onBlur={(e) => checkMinLength(e, 3, "Message should be at least 3 characters long!")}
-                    onChange={(e) => setMessage(e.target.value)}
+                    onChange={(e) => {
+                        e.target.setCustomValidity("")
+                        setMessage(e.target.value)
+                    }}
                 />
             </div>
             <div className={`g-recaptcha ${fieldGap}`} data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_CLIENT_KEY} />
