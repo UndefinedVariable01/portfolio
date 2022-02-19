@@ -19,11 +19,11 @@ export default function About() {
             </div>
             <div className={`${container} ${c1}`}>
                 <p className={question}>What's your name?</p>
-                <p className={answer}>uva</p>
+                <p className={answer}>mohammadreza gholami</p>
             </div>
             <div className={`${container} ${c2}`}>
-                <p className={question}>Are you a boy or a girl?</p>
-                <p className={answer}>i'm a boy</p>
+                <p className={question}>Do you enjoy coding?</p>
+                <p className={answer}>Yup, you bet i do</p>
             </div>
             <div className={`${container} ${c3}`}>
                 <p className={question}>How old are you?</p>
